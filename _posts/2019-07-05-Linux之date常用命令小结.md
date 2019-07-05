@@ -1,11 +1,10 @@
-@[TOC](四个常用命令写法)
 ## 时间戳
-```shell
+```sh
 date "+%s" # 1970年1月1号 0点0分0秒到当前时间的秒数，单位是秒
 ```
 
 ## 时间戳转换成日期格式
-```shell
+```sh
 timestamp=`date "+%s"`
 
 # 注意，这里的S是大写的表示“秒”，
@@ -14,13 +13,13 @@ date -d @"$timestamp" "+%Y-%m-%d %H:%M:%S"
 ```
 
 ## 日期转换成时间戳
-```shell
+```sh
 time=$(date "+%Y-%m-%d")  # $()与``一样，都表示赋值
 date -d "$time" "+%s"
 ```
 
 ## 前一天表示方法
-```shell
+```sh
 date -d "1 days ago" "+%Y-%m-%d" # 这里的days写成day也可以
 date -d -1days "+%Y-%m-%d" # 这里的days写成day也可以
 
