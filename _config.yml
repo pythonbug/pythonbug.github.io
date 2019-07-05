@@ -1,9 +1,9 @@
-title: Hacker-Blog
-description: "A Jekyll Blog Theme For Hackers"
+title: pythonbug-blog
+description: "自己学习经历分享"
 author:
-  name: "SomeHacker"
-  email: "someone@somewebsite.somedomain"
-  url: "https://ashishchaudhary.in/hacker-blog"
+  name: "pythonbug"
+  email: "xuyang5188@outlook.com"
+  url: "http://www.pythonbug.com"
 
 baseurl: /
 
@@ -28,5 +28,5 @@ plugins:
   - jekyll-sitemap
 
 # Custom variables
-owner : "SomeHacker"
-year : "2018"
+owner : "pythonbug"
+year : "2019"
