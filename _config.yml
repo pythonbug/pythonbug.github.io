@@ -1,14 +1,18 @@
-# Example Site settings
+title: 'b2a3e8.github.io'
+description: "site description for seo"
+baseurl: "/jekyll-theme-console"
+url: "https://b2a3e8.github.io"
 
-#google_analytics: UA-NNNNNNNN-N
+header_pages:
+  - index.md
+  - peter.md
+  - about.md
+  - contact.md
 
-#header_pages:
-#  - index.md
-#  - about.md
+style: dark
 
-#footer: 'follow us on <a href="https://twitter.com/">twitter</a>'
+footer: 'follow us on <a href="https://twitter.com/">twitter</a>'
 
-#style: light # dark (default) or light
-
-plugins:
-  - jekyll-seo-tag
+# Build settings
+markdown: kramdown
+remote_theme: b2a3e8/jekyll-theme-console
