@@ -1,6 +1,7 @@
 ---
 title: Yet Another Sample Page
 published: true
+category: jekyll
 ---
 
 Text can be **bold**, _italic_, ~~strikethrough~~ or `keyword`.
