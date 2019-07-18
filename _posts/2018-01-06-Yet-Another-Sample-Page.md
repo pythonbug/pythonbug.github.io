@@ -3,7 +3,15 @@ title: Yet Another Sample Page
 published: true
 category: jekyll
 ---
-
+<h4>Category</h4>
+<ul>
+    //这里使用了 jekyll 语法，会被编译，所以加多个"\"
+    {\% for category in site.categories %\}
+    <li><a href="/categories/{\{ category | first }\}/" title="view all
+posts">{\{ category | first }\} {\{ category | last | size }\}</a>
+    </li>
+    {\% endfor %\}
+</ul>
 Text can be **bold**, _italic_, ~~strikethrough~~ or `keyword`.
 
 [Link to another page](another-page).
