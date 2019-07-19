@@ -18,7 +18,7 @@ twitter_username:
 #facebook_username: gaohaoyang.water
 github_username:  pythonbug
 email: xuyang5188@outlookcom
-weibo_username: 3115521wh
+#weibo_username: 3115521wh
 #zhihu_username: gaohaoyang
 #linkedIn_username: gaohaoyang
 dribbble_username:
@@ -36,7 +36,7 @@ disqus_shortname: pythonbug
 # hm.src = "//hm.baidu.com/hm.js?xxxxxxxxxxxx";
 # xxxxx字符串
 baidu_tongji_id: e32b5ed509888d756413a511f72dbdf7
-google_analytics_id: UA-72449510-4 # google 分析追踪id
+#google_analytics_id: UA-72449510-4 # google 分析追踪id
 
 # Build settings
 markdown: kramdown
