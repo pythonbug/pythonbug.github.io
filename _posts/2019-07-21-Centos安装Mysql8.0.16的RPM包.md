@@ -70,7 +70,7 @@ mysql -uroot -p
 
 ## 登录成功之后修改密码
 ```sql
-ALTER USER 'root'@'localhost' IDENTIFIED BY '7jq89C9jE=MC^2'
+ALTER USER 'root'@'localhost' IDENTIFIED BY '新密码';
 # 这里好像不写localhost直接写ip地址会报错，要先换密码。难道是当成了对远程的机器执行命令？
 ```
 
