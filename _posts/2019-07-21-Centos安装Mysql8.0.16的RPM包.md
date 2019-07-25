@@ -100,7 +100,7 @@ firewall-cmd --list-ports
 
 ## 若3306默认端口未开放
 ```sh
-firewall-cmd --zone=public --add-port=3306/tcp --permanet
+firewall-cmd --zone=public --add-port=3306/tcp --permanent
 #–zone #作用域
 #–add-port=80/tcp #添加端口，格式为：端口/通讯协议
 #–permanent #永久生效，没有此参数重启后失效
@@ -108,7 +108,7 @@ firewall-cmd --zone=public --add-port=3306/tcp --permanet
 
 ## 关闭端口的命令
 ```sh
-firewall-cmd --zone=public --remove-port=3306/tcp --permanet
+firewall-cmd --zone=public --remove-port=3306/tcp --permanent
 ```
 
 ## 重启防火墙命令
