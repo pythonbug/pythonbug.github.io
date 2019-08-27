@@ -33,5 +33,5 @@ sudo docker run hello-world
 
 ## 5、视频
 <video id="video" controls="" preload="none">
-<source id="mp4" src="./a.mp4" type="video/mp4">
+<source id="mp4" src="https://github.com/pythonbug/pythonbug.github.io/blob/master/_posts/a.mp4" type="video/mp4">
 </video>
