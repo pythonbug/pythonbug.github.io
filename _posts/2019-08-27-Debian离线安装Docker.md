@@ -32,6 +32,3 @@ sudo docker run hello-world
 [docker的Debian包](https://download.docker.com/linux/debian/dists/stretch/pool/stable/amd64/docker-ce_19.03.1~3-0~debian-stretch_amd64.deb)
 
 ## 5、视频
-<video id="video" controls="" preload="none">
-<source id="mp4" src="https://github.com/pythonbug/pythonbug.github.io/blob/master/_posts/a.mp4" type="video/mp4">
-</video>
