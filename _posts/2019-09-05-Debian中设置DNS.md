@@ -2,8 +2,8 @@
 layout: post
 title:  "Debian10中设置DNS"
 date:   2019-09-08 22:35
-categories: Debian
-tags: Debian Linux
+categories: Linux
+tags: Debian 网络 DNS
 excerpt: 知识点记录
 author: Pythonbug
 mathjax: true
