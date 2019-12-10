@@ -8,7 +8,8 @@ excerpt: 知识点记录
 author: Pythonbug
 mathjax: true
 ---
->1. Write a program that uses one printf() call to print your first name and last name on one line uses a second printf() call to print your first and last names on two separate lines,and uses a pair of printf() calls tos print your first and last names on one line.The output should look like this (but using your name):
+### practise 1
+>Write a program that uses one printf() call to print your first name and last name on one line uses a second printf() call to print your first and last names on two separate lines,and uses a pair of printf() calls tos print your first and last names on one line.The output should look like this (but using your name):
 Gustav Mahler <-- First print statement
 Gustav        <-- Second print statement
 Mahler        <-- Still the second print statement
@@ -28,7 +29,8 @@ int main(void){
 
 ```
 
->2. Write a program to print your name and address.
+### practise 2
+>Write a program to print your name and address.
 
 ```
 #include<stdio.h>
@@ -39,7 +41,8 @@ int main(void){
 }
 ```
 
->3. Write a program that converts your age in years to days and displays both values.At this point ,don't worry about fractional years and leap years.
+### practise 3
+>Write a program that converts your age in years to days and displays both values.At this point ,don't worry about fractional years and leap years.
 
 ```
 #include<stdio.h>
@@ -56,7 +59,8 @@ int main(void){
 }
 ```
 
->4. Write a program that produces the following output:
+### practise 4
+>Write a program that produces the following output:
 For he's a jolly good fellow:
 For he's a jolly good fellow:
 For he's a jolly good fellow:
@@ -88,7 +92,8 @@ void deny(void){
 
 ```
 
->5. Write a program that produces the following output:
+### practise 5
+>Write a program that produces the following output:
 Brazil,Russia,India,China
 India,China
 Brazil,Russia
@@ -119,7 +124,8 @@ void ic(void){
 
 ```
 
->6. Write a program that creates an integer variable called toes.Have the program set toes to 10.Also have the program calculate what twice toes is and what toes squared is.The program should print all three values.identifying them.
+### practise 6
+>Write a program that creates an integer variable called toes.Have the program set toes to 10.Also have the program calculate what twice toes is and what toes squared is.The program should print all three values.identifying them.
 
 ```
 #include<stdio.h>
@@ -139,7 +145,8 @@ int main(void){
 }
 ```
 
->7. Many studies suggest that smiling has benefits,Write a program that produces the following output:
+### practise 7
+>Many studies suggest that smiling has benefits,Write a program that produces the following output:
 Smile!Smile!Smile!
 Smile!Smile!
 Smile!
@@ -169,7 +176,8 @@ void smile(void){
 }
 ```
 
->8. In C,one function can call another.Write a program that calls a function named one_three().This function should display the word one on one line,call a second function named two(),and then display the word three on one line.The function two() should display the word two on one line.The main() function should display the phrase starting now: nefore calling one_three() and display done!after calling it.Thus,the output should look like the following:
+### practise 8
+>In C,one function can call another.Write a program that calls a function named one_three().This function should display the word one on one line,call a second function named two(),and then display the word three on one line.The function two() should display the word two on one line.The main() function should display the phrase starting now: nefore calling one_three() and display done!after calling it.Thus,the output should look like the following:
 starting now:
 one
 two
