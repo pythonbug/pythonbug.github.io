@@ -93,6 +93,7 @@ Brazil,Russia,India,China
 India,China
 Brazil,Russia
 Have the program use two user-defined functions in addition to main(): one named br() that prints "Brazil,Russia" once,abd one named ic() that prints "India,China" once,Let main() take care of any additional printing tasks.
+
 ```
 #include<stdio.h>
 
@@ -116,4 +117,86 @@ void ic(void){
         printf("India,China\n");
 }
 
+```
+
+>6. Write a program that creates an integer variable called toes.Have the program set toes to 10.Also have the program calculate what twice toes is and what toes squared is.The program should print all three values.identifying them.
+
+```
+#include<stdio.h>
+
+int main(void){
+        int toes,toes_twice,toes_squared;
+
+        toes = 10;
+        toes_twice = toes*2;
+        toes_squared = toes*toes;
+
+        printf("toes: %d\n",toes);
+        printf("toes_twice: %d\n",toes_twice);
+        printf("toes_squared: %d\n",toes_squared);
+
+        return 0;
+}
+```
+
+>7. Many studies suggest that smiling has benefits,Write a program that produces the following output:
+Smile!Smile!Smile!
+Smile!Smile!
+Smile!
+Have the program define a function that displays the string Smile! once,and have the program use the function as often as needed.
+
+```
+#include<stdio.h>
+
+void smile(void);
+
+int main(void){
+        smile();
+        smile();
+        smile();
+        printf("\n");
+        smile();
+        smile();
+        printf("\n");
+        smile();
+        printf("\n");
+
+        return 0;
+}
+
+void smile(void){
+        printf("Smile!");
+}
+```
+
+>8. In C,one function can call another.Write a program that calls a function named one_three().This function should display the word one on one line,call a second function named two(),and then display the word three on one line.The function two() should display the word two on one line.The main() function should display the phrase starting now: nefore calling one_three() and display done!after calling it.Thus,the output should look like the following:
+starting now:
+one
+two
+three
+done!
+
+```
+#include<stdio.h>
+
+void one_three(void);
+void two(void);
+
+int main(void){
+        printf("starting now:\n");
+        one_three();
+        printf("done!\n");
+        return 0;
+}
+
+void one_three(void){
+        printf("one\n");
+        two();
+        printf("three\n");
+}
+
+void two(void){
+        printf("two\n");
+
+}
 ```
