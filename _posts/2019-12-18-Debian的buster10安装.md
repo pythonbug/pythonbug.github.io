@@ -21,7 +21,7 @@ https://developer.aliyun.com/mirror
 https://mirror.tuna.tsinghua.edu.cn/help/debian/
 ```
 ## 2 我的是Debian10 Buster 选择清华的
-### 2.1 好像需要把https换成htpp，不然更新apt-get update的时候会报错什么验证
+### 2.1 好像需要把https换成http，不然更新apt-get update的时候会报错什么验证，我的台式机用的https
 ```
 # root用户
 vi /etc/apt/sources.list
