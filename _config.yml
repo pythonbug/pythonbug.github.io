@@ -56,14 +56,14 @@ footer-text: Copyright (c) 2019 来自中世界
 # 评论，注意，请不要同时添加多种不同的评论区
 
 # 输入Disqus shortname，即可添加评论区
-#disqus: loffer #shortname
+disqus: loffer #shortname
 
 # 输入Gitalk相关设定，即可添加评论区
 gitalk:
   clientID: cca390d808085e620207
   clientSecret: 8c319d0c4ecd156f3e73e3652936a17e257cd70a
-  repo: https://github.com/pythonbug/pythonbug.github.io
-  owner: pythonbug
+  repo: 
+  owner: 
 
 url: "https://www.pythonbug.com"
 imgrepo: "https://bit-ranger.github.io/blog/static/img"
