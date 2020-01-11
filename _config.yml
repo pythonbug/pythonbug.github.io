@@ -39,8 +39,8 @@ gitment:
     client_id: f5765129272972459c49
     client_secret: 8ea0aeae0f4d776b1f127a014e4e4557089ac3cf
 
-# url: "https://bit-ranger.github.io/blog"
-# imgrepo: "https://bit-ranger.github.io/blog/static/img"
+url: "https://www.pythonbug.com"
+imgrepo: "https://bit-ranger.github.io/blog/static/img"
 
 
 #url: "http://127.0.0.1:4000"
