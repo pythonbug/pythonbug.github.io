@@ -45,11 +45,11 @@ defaults:
 
 title: "pythonbug"
 email: pythonbug@gmail.com
-description: ""
+description: "一个程序员"
 github:
   username: pythonbug
 swiftype:
-  searchId: iXZyPokVfxFaBTvi64Y6
+  searchId: 
 # 站点页脚的文字
 footer-text: Copyright (c) 2019 来自中世界
 
