@@ -20,6 +20,8 @@ layout: default
           <hr class="boundary">
           <article>
             {{content}}
+            {% include disqus.html %}
+            {% include gitalk.html %}
           </article>
           <hr class="boundary">
           <div id="post-share" class="bdsharebuttonbox">
