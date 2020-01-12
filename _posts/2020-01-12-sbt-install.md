@@ -1,8 +1,8 @@
 ---
 layout: post
-title: SBT-INSTALL-LINUX
-tags: 安装
-categories: 基础技能
+title: SBT-INSTALL
+tags: install
+categories: basicTech
 published: true
 ---
 

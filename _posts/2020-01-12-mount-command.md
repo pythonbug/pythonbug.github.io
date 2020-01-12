@@ -1,8 +1,8 @@
 ---
 layout: post
 title: mount command
-tags: 安装
-categories: 基础技能
+tags: install
+categories: basicTech
 published: true
 ---
 
