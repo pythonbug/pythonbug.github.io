@@ -34,6 +34,8 @@ github:
   username: pythonbug
 swiftype:
   searchId: EeJfxJwA2kryPskPZocb
+swift_search:
+      enable: true
 # Gitalk settings
 comment_gitalk_clientId: d67b9f374f6972290aee
 comment_gitalk_clientSecret: 4cac134f9a3c7cb6542de9a1920892a740a38ab8
