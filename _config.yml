@@ -60,10 +60,11 @@ disqus: www.pythonbug.com
 
 # 输入Gitalk相关设定，即可添加评论区
 # gitalk:
-#   clientID: cca390d808085e620207
-#   clientSecret: 8c319d0c4ecd156f3e73e3652936a17e257cd70a
-#   repo: https://github.com/pythonbug/testblog
-#   owner: pythonbug
+  clientID: cca390d808085e620207
+  clientSecret: 8c319d0c4ecd156f3e73e3652936a17e257cd70a
+  repo: blogtalk
+  owner: pythonbug
+  admin: pythonbug
 
 url: "https://www.pythonbug.com"
 imgrepo: "https://bit-ranger.github.io/blog/static/img"
