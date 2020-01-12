@@ -1,6 +1,6 @@
 ---
 layout: post
-title: JDK1.8-INSTALL-LINUX
+title: SBT-INSTALL-LINUX
 tags: 安装
 categories: 基础技能
 published: true
@@ -9,11 +9,12 @@ published: true
 * TOC
 {:toc}
 
-
 >说明，[in]表示输入，[out]表示命令行输出
 
 ## 1 下载
-[官网下载jdk1.8](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)
+
+>注意这里的版本是1.3.6
+[官网下载sbt](https://piccolo.link/sbt-1.3.6.tgz)
 
 ## 2 安装
 
@@ -21,19 +22,20 @@ published: true
 # 创建一个专门放置这些软件的目录
 [in]shell> mkdir ~/app
 # 解压至该目录
-[in]shell> tar -zxf jdk-8u231-linux-x64.tar.gz -C ~/app/
+[in]shell> tar -zxf sbt-1.3.6.tgz -C ~/app/
 # 进入该目录
-[in]shell> cd ~/app/jdk1.8.0_231
+[in]shell> cd ~/app/sbt
 ~~~
 
 ## 3 查看查看当前目录
 
 ~~~shell
 [in]shell> pwd
-[out]shell> /home/pythonbug/app/jdk1.8.0_231
+[out]shell> /home/pythonbug/app/sbt
 ~~~
 
 ## 4 配置环境变量文件
+
 >我都是Debian系统，环境变量文件是.profile，centos是.bash_profile
 
 ~~~shell
@@ -41,10 +43,11 @@ published: true
 ~~~
 
 #### 4.1 添加如下内容
+
 ~~~shell
 // 添加下面内容。注意，你的主目录跟我是不一样的，注意修改
-export JAVA_HOME=/home/pythonbug/app/jdk1.8.0_231
-export PATH=$JAVA_HOME/bin:$PATH
+export SBT_HOME=/home/pythonbug/app/sbt
+export PATH=$SBT_HOME/bin:$PATH
 ~~~
 
 #### 4.2 保存退出
@@ -53,17 +56,4 @@ export PATH=$JAVA_HOME/bin:$PATH
 #### 4.3 使刚刚配置的环境变量生效
 ~~~shell
 [in]shell> source ~/.profile
-~~~
-
-#### 4.4 测试一下是否配置正确
-~~~shell
-[in]shell> java -version
-~~~
-
-#### 出现下面输出表示成功
-~~~shell
-[out]shell> 
-java version "1.8.0_231"
-Java(TM) SE Runtime Environment (build 1.8.0_231-b11)
-Java HotSpot(TM) 64-Bit Server VM (build 25.231-b11, mixed mode)
 ~~~
