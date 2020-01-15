@@ -39,3 +39,8 @@ sudo make && sudo make install
 ~~~shell
 sudo ln -s /usr/tcl/bin/expect /usr/bin/expect
 ~~~
+
+# 6、软件连接
+[tcl8.4.11-src.tar.gz](https://pan.baidu.com/s/1jiHjhZar7wcIwP9nA72RjA)
+
+[expect5.45.tar.gz](https://pan.baidu.com/s/1Wby2hF79fr_LFC_F5_iqgQ)
