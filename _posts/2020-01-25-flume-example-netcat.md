@@ -24,6 +24,7 @@ sink选择：输出到控制台，所以选择logger<br>
 ## 3 配置文件
 >文件名称：singleTest.conf
 >文件内容：
+
 ~~~shell
 # singleTest.conf: A single-node Flume configuration
 
