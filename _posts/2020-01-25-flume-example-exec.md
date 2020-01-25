@@ -1,6 +1,6 @@
 ---
 layout: post
-title: flume-example-netcat
+title: flume-example-exec
 tags: example
 categories: basicTech
 ---
@@ -22,6 +22,7 @@ sink: 输出到控制台，还是选择logger
 ## 3 配置文件
 >文件名称：
 >文件内容：
+
 ~~~shell
 # singleTestExec.conf: A single-node Flume configuration
   
