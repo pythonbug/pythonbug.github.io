@@ -11,6 +11,7 @@ categories: basicTech
 
 ## 1 需求简介
 这是flume教程上的例子，单节点监听44444端口，传输数据到控制台。
+flume的安装教程，参阅[flume安装](https://www.pythonbug.com/basictech/flume-install/)
 
 ## 2 需求分析
 使用flume，就是写flume的配置文件。<br>
@@ -50,3 +51,6 @@ flume-ng agent --conf $FLUME_HOME/conf \
 --conf-file /home/pythonbug/code/Learn/flume/singleTest.conf \
 --name a1 -Dflume.root.logger=INFO,console
 ~~~
+
+## 5 疑问
+这里的 `--conf`是global options，我以为是singleTest.conf文件所在的目录。经过实验，发现不是，而是应该为flume安装目录下面的conf目录。
