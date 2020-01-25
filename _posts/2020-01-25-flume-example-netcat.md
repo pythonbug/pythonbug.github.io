@@ -10,13 +10,16 @@ categories: basicTech
 
 
 ## 1 需求简介
-这是flume教程上的例子，单节点监听44444端口，传输数据到控制台。
+这是flume教程上的例子，单节点监听44444端口，传输数据到控制台。<br>
 flume的安装教程，参阅[flume安装](https://www.pythonbug.com/basictech/flume-install/)
 
 ## 2 需求分析
 使用flume，就是写flume的配置文件。<br>
 在配置文件中使flume的各个组件能够串接起来。<br>
 还需要注意的一点是：选择恰当的组件。<br>
+source选择：由于是监控端口，所以选择netcat<br>
+channel选择：内存型即可<br>
+sink选择：输出到控制台，所以选择logger<br>
 
 ## 3 配置文件
 >文件名称：singleTest.conf
