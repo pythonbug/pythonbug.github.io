@@ -1,5 +1,5 @@
 ---
-layout: post
+layout: post1
 title: flume-example-exec
 tags: example
 categories: basicTech
@@ -20,7 +20,7 @@ channel: 内存型
 sink: 输出到控制台，还是选择logger
 
 ## 3 配置文件
->文件名称：
+>文件名称：singleTestExec.conf
 >文件内容：
 
 ~~~shell
