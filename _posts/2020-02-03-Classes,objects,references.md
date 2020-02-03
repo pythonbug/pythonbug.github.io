@@ -1,7 +1,7 @@
 ---
 layout: post1
 title: 类，对象和引用的关系
-tags: 知识巩固
+tags: note
 categories: Java
 ---
 
@@ -9,10 +9,10 @@ categories: Java
 {:toc}
 
 
-# 1 这三者在代码中具体所指
+## 1 这三者在代码中具体所指
 ![类对象及引用.png](https://i.loli.net/2020/02/04/zKoGqZ95ljaQ7iB.png)
 
-# 2 类和对象的关系
+## 2 类和对象的关系
 - 类是对象的模板，对象是类的一个实例
 - 一个Java程序中同一个package下类名必须是独一无二的
     - 因为类名必须和创建这个类名的文件名一致，众所周知：一个目录下面的文件名肯定是不能重复的
@@ -20,7 +20,7 @@ categories: Java
 - 一个对象只能根据一个类来创建
     - 很明显：没有`new Animal() People() Alien()`这种写法
 
-# 3 引用和类以及对象的关系
+## 3 引用和类以及对象的关系
 - 引用必须是且只能是一个类的引用
     - 很明显：没有 `Animal m1 = new Animal() People() Alien()`这种莫名其妙的写法
 - 引用只能指向其所属类型的类的对象

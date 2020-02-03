@@ -1,7 +1,7 @@
 ---
 layout: post1
 title: java-datatype-long
-tags: 知识盲点
+tags: note
 categories: Java
 ---
 
