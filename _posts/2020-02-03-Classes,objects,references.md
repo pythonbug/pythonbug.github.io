@@ -1,6 +1,6 @@
 ---
 layout: post
-title: 类，对象和引用的关系
+title: class,object and referrnces
 tags: note
 categories: Java
 published: true
