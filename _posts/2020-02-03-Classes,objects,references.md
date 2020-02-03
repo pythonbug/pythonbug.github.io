@@ -1,6 +1,6 @@
 ---
 layout: post
-title: class,object and referrnces
+title: class-object-referrnces
 tags: note
 categories: Java
 published: true
