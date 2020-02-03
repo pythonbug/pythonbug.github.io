@@ -3,6 +3,7 @@ layout: post
 title: flume-install
 tags: install
 categories: basicTech
+published: true
 ---
 
 * TOC

@@ -1,8 +1,9 @@
 ---
-layout: post1
+layout: post
 title: 类，对象和引用的关系
 tags: note
 categories: Java
+published: true
 ---
 
 * TOC

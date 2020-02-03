@@ -3,6 +3,7 @@ layout: post
 title: flume-example-netcat
 tags: example
 categories: basicTech
+published: true
 ---
 
 * TOC

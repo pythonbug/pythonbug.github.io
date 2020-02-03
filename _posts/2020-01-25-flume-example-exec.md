@@ -1,8 +1,9 @@
 ---
-layout: post1
+layout: post
 title: flume-example-exec
 tags: example
 categories: basicTech
+published: true
 ---
 
 * TOC

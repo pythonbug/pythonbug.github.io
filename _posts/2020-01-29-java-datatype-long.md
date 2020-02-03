@@ -1,8 +1,9 @@
 ---
-layout: post1
+layout: post
 title: java-datatype-long
 tags: note
 categories: Java
+published: true
 ---
 
 * TOC

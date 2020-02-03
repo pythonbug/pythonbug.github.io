@@ -1,8 +1,9 @@
 ---
-layout: post1
-title: flume-example-mutinode
+layout: post
+title: flume-example-multinode
 tags: example
 categories: basicTech
+published: true
 ---
 
 * TOC
