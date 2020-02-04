@@ -1,6 +1,6 @@
 ---
 layout: post
-title: useradd
+title: zk-install
 tags: note
 categories: linux
 published: true
