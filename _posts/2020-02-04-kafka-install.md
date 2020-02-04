@@ -1,6 +1,6 @@
 ---
 layout: post
-title: useradd
+title: kafka-install
 tags: note
 categories: linux
 published: true
