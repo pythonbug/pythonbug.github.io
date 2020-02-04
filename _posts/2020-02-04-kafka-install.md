@@ -18,7 +18,7 @@ published: true
 [kafka_2.13-2.4.0](http://mirrors.tuna.tsinghua.edu.cn/apache/kafka/2.4.0/kafka_2.13-2.4.0.tgz)
 
 ## 1.2 安装
-切换到安装目录：`tar -zxf kafka_2.13-2.4.0.tgz -C ~/app`
+解压：`tar -zxf kafka_2.13-2.4.0.tgz -C ~/app`
 
 ## 1.3 设置环境变量
 ~~~shell
@@ -50,6 +50,7 @@ vim server.properties
 
 # 2 树莓派三台安装
 >把主机上下载的安装包传输到其中一台树莓派，我的树莓派也设置了hostname，这一台的hostname叫做slaves1。
+
 ## 2.1 安装
 ~~~shell
 sftp pythonbug@power1
