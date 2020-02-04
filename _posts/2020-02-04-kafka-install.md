@@ -9,6 +9,7 @@ published: true
 * TOC
 {:toc}
 
+
 >三台树莓派+一台主机安装kafka
 # 1 主机先安装
 ## 1.1 下载
@@ -43,7 +44,7 @@ vim server.properties
 
 ## 1.5 启动kafka
 >启动kafka需要先启动zookeeper，有关kafka的安装启动，参照[zookeeper](https://www.pythonbug.com/linux/zk-install/)
-`./kafka-server-start.sh $KAFKA_HOME/config/server.properties`
+`./kafka-server-start.sh [-daemon] $KAFKA_HOME/config/server.properties`
 
 # 2 树莓派三台安装
 >把主机上下载的安装包传输到其中一台树莓派，我的树莓派也设置了hostname，这一台的hostname叫做slaves1。
@@ -71,3 +72,42 @@ source ~/.profile
 `scp -r kafka_2.13-2.4.0/ pi@slaves3:/home/pi/app`
 
 #### 2.3.2 分发环境变量
+`scp /home/pi/.profile pi@slaves2:/home/pi/`<br>
+`scp /home/pi/.profile pi@slaves3:/home/pi/`
+
+## 2.4 设置server.properties
+#### 2.4.1 slaves1:
+- broker.id=1
+- listeners=PLAINTEXT://slaves1:9092
+- log.dirs=/home/pi/data/kafka-logs
+- zookeeper.connect=power1:2181
+
+#### 2.4.2 slaves2:
+- broker.id=2
+- listeners=PLAINTEXT://slaves2:9092
+- log.dirs=/home/pi/data/kafka-logs
+- zookeeper.connect=power1:2181
+
+#### 2.4.3 slaves3:
+- broker.id=3
+- listeners=PLAINTEXT://slaves3:9092
+- log.dirs=/home/pi/data/kafka-logs
+- zookeeper.connect=power1:2181
+
+## 2.5 启动
+`$KAFKA_HOME/bin/kafka-server-start.sh -daemon $KAFKA_HOME/config/server.properties`
+
+## 2.6 创建topic
+`$KAFKA_HOME/bin/kafka-topics.sh --create --bootstrap-server slaves1:9092 --replication-factor 1 --partitions 1 --topic test`
+#### 2.6.1 创建topic的时候遇到的小问题
+如下：
+**org.apache.kafka.common.errors.TimeoutException: Timed out waiting to send the call**
+
+原因分析：
+我的power1开启了防火墙，但是power1这台机器也安装了kafka，所以需要把power1的9092端口开放出来。
+
+## 2.7 发送一些消息
+`$KAFKA_HOME/bin/kafka-console-producer.sh --broker-list slaves3:9092 --topic test`
+
+## 2.8 开启消费者
+`$KAFKA_HOME/bin/kafka-console-consumer.sh --bootstrap-server power1:9092 --topic test --from-beginning`
