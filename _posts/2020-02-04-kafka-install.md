@@ -11,7 +11,9 @@ published: true
 
 
 >三台树莓派+一台主机安装kafka
+
 # 1 主机先安装
+
 ## 1.1 下载
 [kafka_2.13-2.4.0](http://mirrors.tuna.tsinghua.edu.cn/apache/kafka/2.4.0/kafka_2.13-2.4.0.tgz)
 
