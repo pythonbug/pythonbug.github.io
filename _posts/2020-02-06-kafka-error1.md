@@ -2,7 +2,7 @@
 layout: post
 title: kafka-error1
 tags: note
-categories: linux
+categories: kafka
 published: true
 ---
 
