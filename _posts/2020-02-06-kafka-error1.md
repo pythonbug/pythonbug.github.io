@@ -1,6 +1,6 @@
 ---
 layout: post
-title: zk-install
+title: kafka-error1
 tags: note
 categories: linux
 published: true
