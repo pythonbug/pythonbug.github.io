@@ -55,7 +55,7 @@ System.out.println(result);
 ```
 
 &nbsp;
-## 8 释放资源结果
+## 8 释放资源
 ```java
 stmt.close();
 connection.close();
