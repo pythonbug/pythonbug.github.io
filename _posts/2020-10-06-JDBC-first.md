@@ -25,6 +25,35 @@ Class.forName("com.mysql.jdbc.Driver")
 ```
 
 &nbsp;
+#### 2.1 为啥要注册驱动
+    明确我要操作的是哪一种数据库。
+    告诉JDBC，我要使用哪一个数据库的驱动类来实现它。
+
+&nbsp;
+#### 2.2 为啥这里一句话就完成了注册驱动
+    Class.forName("com.mysql.jdbc.Driver")，把类的字节码加载进内存。
+    然后就能注册驱动了吗？说明这个类被加载的时候执行了一段代码。
+    我们联想到 ---> 静态代码 ---> 查看com.mysql.jdbc.Driver的源码进行验证。
+```java
+//
+    // Register ourselves with the DriverManager
+    //
+    static {
+        try {
+            java.sql.DriverManager.registerDriver(new Driver());
+        } catch (SQLException E) {
+            throw new RuntimeException("Can't register driver!");
+        }
+    }
+```
+果然是这样的，调用了DriverManager类的registerDriver方法。
+
+&nbsp;
+#### 2.3 小小的注意点
+    在MySQL的5版本之后，这里的Class.forName("com.mysql.jdbc.Driver")可以不用再写。
+    因为 MySQL驱动包里面的 META-INF/services/java.sql.Driver文件已经加上了。
+
+&nbsp;
 ## 3 创建数据库连接对象
 ```java
 Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306/learn", "ai88", "5201314");
