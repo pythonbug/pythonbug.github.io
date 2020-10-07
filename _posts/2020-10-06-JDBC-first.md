@@ -60,6 +60,26 @@ Connection connection = DriverManager.getConnection("jdbc:mysql://localhost:3306
 ```
 
 &nbsp;
+#### 3.1 为啥要创建这玩意
+    因为Connection有两个功能。
+
+###### 3.1.1 创建执行SQL的对象
+- prepareStatement(String sql)
+- createStatement()
+
+###### 3.1.2 开启事务
+    说实话，我非常讨厌 事务 这种说法。
+    为了解释一个非常简单的事情，故弄玄虚。
+    其实说白了，就是三句话：
+    关闭自动提交功能；
+    根据具体的业务，人为控制手动提交；
+    根据具体的业务，人为撤销提交（回滚）。
+    这三句话，也就对应Connection这个接口的三种方法。
+- setAutoCommit(false)
+- commit()
+- rollback()
+
+&nbsp;
 ## 4 准备sql
 ```java
 String sql = "update student set sex='男' where 1=1 and id=903";
